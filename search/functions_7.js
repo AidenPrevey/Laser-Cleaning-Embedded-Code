@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['parse_0',['parse',['../d6/d80/classSerialReceiverTransmitter.html#ae7c99afd5a9e3371e2a0a33763239fb2',1,'SerialReceiverTransmitter']]],
-  ['printstate_1',['printState',['../d2/dd0/classAS5048A.html#ab14e60942c472eefa2092d0701a96028',1,'AS5048A']]]
+  ['initializeautomode_0',['initializeAutoMode',['../d3/dfb/classCleaner.html#af03be2db45010be9d99c80094a531852',1,'Cleaner']]],
+  ['initializemanualmode_1',['initializeManualMode',['../d3/dfb/classCleaner.html#a8c70ec1e1156ac7986d260e50516d946',1,'Cleaner']]]
 ];
