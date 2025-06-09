@@ -117,9 +117,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3b1cecadf34f714855909bd05123138" id="r_aa3b1cecadf34f714855909bd05123138"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3b1cecadf34f714855909bd05123138">Cleaner</a> ()</td></tr>
-<tr class="memdesc:aa3b1cecadf34f714855909bd05123138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="../../d3/dfb/classCleaner.html">Cleaner</a> object and initializes all member components.  <br /></td></tr>
-<tr class="separator:aa3b1cecadf34f714855909bd05123138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e42bec7a78c37b25265cb8772379ccd" id="r_a4e42bec7a78c37b25265cb8772379ccd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e42bec7a78c37b25265cb8772379ccd">Cleaner</a> (<a class="el" href="../../d6/d80/classSerialReceiverTransmitter.html">SerialReceiverTransmitter</a> &amp;receiver)</td></tr>
+<tr class="memdesc:a4e42bec7a78c37b25265cb8772379ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="../../d3/dfb/classCleaner.html">Cleaner</a> object and initializes all member components.  <br /></td></tr>
+<tr class="separator:a4e42bec7a78c37b25265cb8772379ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac051a223500b358993b956c6aa859c06" id="r_ac051a223500b358993b956c6aa859c06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac051a223500b358993b956c6aa859c06">begin</a> ()</td></tr>
 <tr class="memdesc:ac051a223500b358993b956c6aa859c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="../../d3/dfb/classCleaner.html">Cleaner</a> system and its components. Designed to be ran once at start.  <br /></td></tr>
 <tr class="separator:ac051a223500b358993b956c6aa859c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,8 +191,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updatePCF8575_flag</b
 <tr class="separator:abbefbeacf707f5f7f6f4c334e69dbca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa3b1cecadf34f714855909bd05123138" name="aa3b1cecadf34f714855909bd05123138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3b1cecadf34f714855909bd05123138">&#9670;&#160;</a></span>Cleaner()</h2>
+<a id="a4e42bec7a78c37b25265cb8772379ccd" name="a4e42bec7a78c37b25265cb8772379ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e42bec7a78c37b25265cb8772379ccd">&#9670;&#160;</a></span>Cleaner()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,7 +200,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updatePCF8575_flag</b
         <tr>
           <td class="memname">Cleaner::Cleaner </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d6/d80/classSerialReceiverTransmitter.html">SerialReceiverTransmitter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>receiver</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -445,6 +445,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updatePCF8575_flag</b
 </div><div class="memdoc">
 
 <p>Updates and returns the real-time state of the <a class="el" href="../../d3/dfb/classCleaner.html">Cleaner</a> system. </p>
+<p>std </p>
 <p>This function checks the emergency stop (ESTOP) pin and, if triggered, sets the system to an emergency stopped state and initiates shutdown. It then updates the jaw rotation and clamp position based on the current positions of their respective motors. The clamp position is calculated relative to the jaw rotation. The function also updates the brake state by reading the corresponding hardware pin.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d2/dd7/structCleaner_1_1State.html">Cleaner::State</a> The updated state of the <a class="el" href="../../d3/dfb/classCleaner.html">Cleaner</a> system, reflecting the latest hardware readings and safety status. </dd></dl>
 
